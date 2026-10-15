@@ -6,8 +6,10 @@
   <meta name="description" content="A beginner web design project built with HTML and CSS.">
   <title>My First Website | Learning Web Design</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
 <body>
+  <a class="skip-link" href="#home">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="My First Website home">
       <span class="brand-mark">M</span>
@@ -18,10 +20,11 @@
       <a href="#skills">What I'm learning</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button id="theme-toggle" aria-label="Toggle color theme">🌙</button>
   </header>
 
   <main id="home">
-    <section class="hero">
+    <section class="hero" data-reveal>
       <div class="hero-copy">
         <p class="eyebrow"><span class="dot"></span> MY WEB DESIGN JOURNEY</p>
         <h1>Small steps.<br><span>Big ideas.</span></h1>
@@ -56,7 +59,7 @@
       </div>
     </section>
 
-    <section class="section about" id="about">
+    <section class="section about" id="about" data-reveal>
       <div class="section-heading">
         <p class="eyebrow">A LITTLE ABOUT THIS PROJECT</p>
         <h2>Every expert starts <span>somewhere.</span></h2>
@@ -64,25 +67,25 @@
       <p class="section-copy">This is my first step into web development. I'm practising how to structure a page, style it, add links, and make it work on phones and computers.</p>
     </section>
 
-    <section class="section skills" id="skills">
+    <section class="section skills" id="skills" data-reveal>
       <div class="section-heading">
         <p class="eyebrow">MY LEARNING CHECKLIST</p>
         <h2>Skills I'm building</h2>
       </div>
       <div class="skill-grid">
-        <article class="skill-card">
+        <article class="skill-card" data-reveal>
           <div class="skill-icon html-icon">&lt;/&gt;</div>
           <h3>HTML</h3>
           <p>The structure of a website: headings, paragraphs, links, and sections.</p>
           <span class="status"><span></span> Learning</span>
         </article>
-        <article class="skill-card">
+        <article class="skill-card" data-reveal>
           <div class="skill-icon css-icon">✳</div>
           <h3>CSS</h3>
           <p>The design: colours, spacing, typography, layout, and responsive styles.</p>
           <span class="status"><span></span> Learning</span>
         </article>
-        <article class="skill-card">
+        <article class="skill-card" data-reveal>
           <div class="skill-icon git-icon">⑂</div>
           <h3>Git &amp; GitHub</h3>
           <p>Saving versions of my work and sharing projects online.</p>
@@ -91,7 +94,7 @@
       </div>
     </section>
 
-    <section class="callout" id="contact">
+    <section class="callout" id="contact" data-reveal>
       <div>
         <p class="eyebrow">THE JOURNEY CONTINUES</p>
         <h2>This is just the beginning.</h2>
@@ -101,10 +104,12 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" data-reveal>
     <a class="brand footer-brand" href="#home"><span class="brand-mark">M</span><span>My First Website</span></a>
     <p>Made with curiosity and code.</p>
     <a href="#home" class="back-top">Back to top ↑</a>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
