@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A beginner web design project built with HTML and CSS.">
+  <title>My First Website | Learning Web Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="My First Website home">
+      <span class="brand-mark">M</span>
+      <span>My First Website</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">What I'm learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> MY WEB DESIGN JOURNEY</p>
+        <h1>Small steps.<br><span>Big ideas.</span></h1>
+        <p class="hero-text">Welcome to my first website! I'm learning how to turn ideas into web pages using HTML and CSS, one line of code at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#skills">Explore my progress <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+        </div>
+        <div class="mini-note"><span class="check">✓</span> Built with HTML and CSS</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative web design illustration" role="img">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✧</div>
+        <div class="browser-card">
+          <div class="browser-top"><span></span><span></span><span></span><i>my-first-website</i></div>
+          <div class="browser-content">
+            <div class="code-line short"></div>
+            <div class="code-line long"></div>
+            <div class="code-line medium"></div>
+            <div class="preview-block">
+              <div class="preview-icon">✦</div>
+              <div class="preview-line"></div>
+              <div class="preview-line tiny"></div>
+              <div class="preview-button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-tag tag-html"><b>5</b> HTML</div>
+        <div class="floating-tag tag-css"><b>✳</b> CSS</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT THIS PROJECT</p>
+        <h2>Every expert starts <span>somewhere.</span></h2>
+      </div>
+      <p class="section-copy">This is my first step into web development. I'm practising how to structure a page, style it, add links, and make it work on phones and computers.</p>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">MY LEARNING CHECKLIST</p>
+        <h2>Skills I'm building</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <div class="skill-icon html-icon">&lt;/&gt;</div>
+          <h3>HTML</h3>
+          <p>The structure of a website: headings, paragraphs, links, and sections.</p>
+          <span class="status"><span></span> Learning</span>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon css-icon">✳</div>
+          <h3>CSS</h3>
+          <p>The design: colours, spacing, typography, layout, and responsive styles.</p>
+          <span class="status"><span></span> Learning</span>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon git-icon">⑂</div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Saving versions of my work and sharing projects online.</p>
+          <span class="status"><span></span> Learning</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout" id="contact">
+      <div>
+        <p class="eyebrow">THE JOURNEY CONTINUES</p>
+        <h2>This is just the beginning.</h2>
+        <p>I'm excited to keep learning, building, and improving my skills.</p>
+      </div>
+      <a class="button button-light" href="https://github.com/" target="_blank" rel="noopener noreferrer">Keep exploring <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">M</span><span>My First Website</span></a>
+    <p>Made with curiosity and code.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
